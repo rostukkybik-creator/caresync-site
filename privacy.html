@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareSync Privacy Policy</title>
+<meta name="description" content="How CareSync handles your information.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header>
+  <img src="icon.png" alt="" width="56" height="56">
+  <a href="index.html">CareSync</a>
+  <nav aria-label="Main"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+</header>
+<main id="content">
+<h1>Privacy Policy</h1>
+<p class="muted updated">Effective 29 October 2026</p>
+
+<div class="note">
+  <strong>The short version:</strong> we can't read your family's care information. Everything you enter about the
+  person you look after stays on your devices and is shared, end-to-end encrypted, only with the people you invite.
+  An account is optional. Anonymous usage statistics are off unless you turn them on. There are no ads, no tracking
+  and no selling of data. This website uses no cookies.
+</div>
+
+<h2>Who we are</h2>
+<p>CareSync is provided by Volodymyr Huz, vul. Starytskoho, Lviv, Ukraine ("we", "us"). We are the data controller for the
+  account and usage information described below. Contact us about anything in this policy at
+  <a href="mailto:dev1@5hz.io">dev1@5hz.io</a>.</p>
+
+<h2>The information we handle</h2>
+<table>
+  <tr><th scope="col">Information</th><th scope="col">Why</th><th scope="col">Legal basis (EU/UK)</th><th scope="col">Kept for</th></tr>
+  <tr><td>Care information you enter (medicines, doses, schedules, logs, notes, check-ins, appointments, contacts,
+    allergies, documents, costs, rota, readings, photos)</td>
+    <td>To show it to you and the family you invite</td>
+    <td>Performing our agreement with you; for health information, your explicit consent, which you give by entering
+      and sharing it and can withdraw by deleting it</td>
+    <td>Until you or your family delete it</td></tr>
+  <tr><td>Account: name, email, password (hashed), mobile number if you add one (it's optional), account ID,
+    sign-in dates. With Sign in with
+    Apple: name and an email, which can be a private relay address</td>
+    <td>To sign you in, keep your account secure and contact you about it</td>
+    <td>Performing our agreement with you</td>
+    <td>Until you delete the account</td></tr>
+  <tr><td>Anonymous usage statistics (only if you turn them on)</td>
+    <td>To learn which features help and what to improve</td>
+    <td>Your consent</td>
+    <td>Until you turn them off; TelemetryDeck keeps them under its own retention rules</td></tr>
+  <tr><td>Security signals: an anonymous sign-in ID per device, and Apple's App Attest check that requests come
+    from the genuine app</td>
+    <td>To stop abuse of our services</td>
+    <td>Our legitimate interest in keeping the service safe</td>
+    <td>The device ID for as long as the app is installed; provider logs under Google's and Apple's retention rules</td></tr>
+  <tr><td>Emails you send us</td>
+    <td>To answer you</td>
+    <td>Our legitimate interest in helping you</td>
+    <td>Up to 24 months after the conversation ends</td></tr>
+  <tr><td>Website visits</td>
+    <td>Our website host, GitHub Pages, keeps standard server logs (IP address, page, time) for security</td>
+    <td>The host's and our legitimate interest in a secure site</td>
+    <td>Set by the host, typically under 30 days</td></tr>
+</table>
+<p>We don't collect anything else, and we don't ask for more than each feature needs.</p>
+
+<h2>Where your care information is kept, and why we can't read it</h2>
+<ul>
+  <li><strong>On your devices</strong>, in the app's private storage. The Home Screen widget reads a small summary of
+    today's schedule on the same device.</li>
+  <li><strong>In an end-to-end encrypted store</strong>, so it reaches the people you invite. Each item is encrypted
+    on your device, before it leaves, with a key that only your family's devices hold. The encrypted copies are kept
+    by Google Cloud Firestore as our processor. Neither we nor Google can decrypt them. Next to each encrypted item
+    the store keeps only an identifier, its type (for example "medicine"), when it last changed and whether it was
+    deleted.</li>
+  <li><strong>In your iCloud account</strong> (Apple CloudKit), which holds only how your family is set up: the care
+    circle, the cared-for person's name and time zone, who belongs to it, and the encryption key, in CloudKit's
+    end-to-end encrypted fields. No health information is stored in iCloud.</li>
+</ul>
+
+<h2>Who processes data for us</h2>
+<p>We share information only with these service providers, under contracts that limit them to providing their
+  service to us:</p>
+<ul>
+  <li><strong>Google (Firebase Authentication, Cloud Firestore, App Check)</strong>: accounts, the encrypted store and
+    abuse protection. Google may process data in the United States. Transfers are covered by the EU–US Data Privacy
+    Framework and the European Commission's Standard Contractual Clauses.
+    <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</li>
+  <li><strong>Apple (iCloud, Sign in with Apple, App Attest, the App Store)</strong>: family sharing, optional
+    sign-in, app integrity checks and, if you subscribe, payments.
+    <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+  <li><strong>TelemetryDeck</strong> (Germany): anonymous usage statistics, only if you turn them on.
+    <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</li>
+  <li><strong>GitHub, Inc.</strong> (GitHub Pages, United States): hosting this website.</li>
+</ul>
+<p>The people you invite to a care circle can see that circle's information. That's the purpose of the app, and
+  you control who is in it. We don't sell or rent personal information, we don't "share" it for cross-context
+  behavioural advertising, and we don't use advertising, tracking or data-broker services.</p>
+
+<h2>Anonymous usage statistics</h2>
+<p>Off unless you turn them on, during setup or in the app under Family › Privacy. If you do, the app sends events
+  such as "a medicine was marked as taken", rough counts such as "3–4 people help", and technical details such as app
+  and iOS version, device model, language and text size. It never sends names, medicines, doses, notes, check-in
+  answers, appointments, contacts, phone numbers, photos or anything else you type. Statistics use a random ID made for
+  the installation, which TelemetryDeck receives only as a one-way hash, and a new one is made if you turn them off and
+  on. Turning them off stops sending immediately.</p>
+
+<h2>Permissions the app asks for</h2>
+<table>
+  <tr><th scope="col">Permission</th><th scope="col">Why</th></tr>
+  <tr><td>Notifications</td><td>Reminders and updates from your family. Reminders are scheduled on your device.</td></tr>
+  <tr><td>Camera</td><td>Only when you take a photo or scan a label or document. Label text is read on the phone and
+    is not stored or sent.</td></tr>
+  <tr><td>Face ID / Touch ID</td><td>Only if you turn on the app lock. iOS checks it; we never receive biometric data.</td></tr>
+  <tr><td>Apple Health</td><td>Only on the cared-for person's own phone and only if they turn on "Share watch
+    readings": heart rate, blood oxygen and Apple Watch's own heart notifications, shared end-to-end encrypted with
+    their family. Never used for advertising or marketing, never sold, never stored in iCloud. The app never writes to
+    Apple Health.</td></tr>
+  <tr><td>Photos, Files, Contacts, Calendar</td><td>No access is requested. iOS shows its own picker and gives the app
+    only the item you choose.</td></tr>
+</table>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (including the EU, UK, Ukraine and US states such as California, Colorado,
+  Connecticut, Virginia and Washington), you can ask to access, correct, delete or receive a copy of your information.
+  You can also object to or restrict how we use it, and withdraw consent at any time. Withdrawing consent doesn't
+  affect what was done before. Most of this you can do yourself in the app (see below). For anything else, email
+  <a href="mailto:dev1@5hz.io">dev1@5hz.io</a>. We'll answer within 30 days, or tell you within that time why
+  we need longer, as the law where you live allows. We won't treat you differently for using your
+  rights. If you're unhappy with our answer, you can complain to your data protection authority, and in some US
+  states you can appeal our decision by replying to it.</p>
+<p>Because care information is end-to-end encrypted, we can't read or export it for you. You and your family hold
+  it on your devices, and you can delete it there.</p>
+
+<h2>Deleting your information</h2>
+<ul>
+  <li><strong>Single items:</strong> delete them in the app.</li>
+  <li><strong>A care circle:</strong> leave it, remove members or stop sharing in the Family tab. When someone is
+    removed, the family key is replaced, so they can't read anything shared afterwards, and the encrypted copies made
+    with the old key are deleted from our store about a month later.</li>
+  <li><strong>A whole care circle, everywhere:</strong> the Primary Caregiver can use Family › Security › Delete
+    This Care Circle. It's removed from every family member's device and from iCloud, and its encrypted copies are
+    deleted from our store within two days.</li>
+  <li><strong>Your account:</strong> Family › Account › Delete Account. This deletes your account details from our
+    sign-in service and, for Sign in with Apple, revokes our access to your Apple ID.</li>
+  <li><strong>Everything on a device:</strong> delete the app.</li>
+  <li><strong>Encrypted copies in our store:</strong> deleting an item leaves a small encrypted marker so your
+    family's other devices delete it too; our store removes these markers automatically about 90 days later. If you can't
+    use the app, email us and we'll delete a circle's encrypted records within 30 days.</li>
+  <li><strong>Usage statistics:</strong> turn them off. They are anonymous, so we can't find one person's
+    statistics.</li>
+</ul>
+
+<h2>Security</h2>
+<p>End-to-end encryption (AES-256-GCM), records that can't be altered or deleted by our servers without the family
+  key, app integrity checks, access rules on our database, optional Face ID / passcode lock, and no care data in
+  device backups once the encrypted store is in use. No system is perfectly secure; if a breach affects you, we'll
+  tell you and the authorities as the law requires.</p>
+
+<h2>Children</h2>
+<p>CareSync is for adults coordinating care and is not directed at anyone under 16. If you believe a child has given
+  us personal information, contact us and we'll delete it.</p>
+
+<h2>Health information, US consumer health data and HIPAA</h2>
+<p>Our <a href="health-data.html">Consumer Health Data Privacy Policy</a> describes the health information involved
+  and your rights over it under laws such as Washington's My Health My Data Act. CareSync isn't a healthcare provider
+  or health plan and isn't covered by HIPAA.</p>
+
+<h2>This website</h2>
+<p>This website sets no cookies, uses no analytics or tracking and has no third-party embeds. See the
+  <a href="cookies.html">Cookie Policy</a>.</p>
+
+<h2>Changes</h2>
+<p>If we change this policy, we'll update this page and the date at the top. For significant changes we'll also tell
+  you in the app before they take effect.</p>
+
+<h2>Medical disclaimer</h2>
+<p>CareSync is a family coordination tool, not a medical device. It doesn't diagnose, treat or give medical advice.
+  Always follow your doctor's and pharmacist's instructions, and call emergency services in an emergency.</p>
+</main>
+<footer>
+  <nav aria-label="Legal">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="health-data.html">Consumer Health Data Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="cookies.html">Cookie Policy</a>
+    <a href="refunds.html">Refund Policy</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <p class="business">© 2026 Volodymyr Huz · vul. Starytskoho, Lviv, Ukraine ·
+    <a href="mailto:dev1@5hz.io">dev1@5hz.io</a></p>
+</footer>
+</body>
+</html>
