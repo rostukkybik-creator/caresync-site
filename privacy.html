@@ -16,44 +16,34 @@
 </header>
 <main id="content">
 <h1>Privacy Policy</h1>
-<p class="muted updated">Effective 11 November 2026</p>
+<p class="muted updated">Effective 19 November 2026</p>
 
 <div class="note">
-  <strong>The short version:</strong> we can't read your family's care information. Everything you enter about the
-  person you look after stays on your devices and is shared, end-to-end encrypted, only with the people you invite.
-  An account is optional. Anonymous usage statistics are off unless you turn them on. There are no ads, no tracking
-  and no selling of data. This website uses no cookies.
+  <strong>The short version:</strong> your care information stays on your device. It never goes to our servers:
+  CareAlong uses none. Your own iCloud keeps only two small records, the care circle and your display name, and no
+  care information. There's no account, no usage statistics, no ads, no tracking and no selling of data. This website
+  uses no cookies.
 </div>
 
 <h2>Who we are</h2>
-<p>CareAlong is provided by Volodymyr Huz, vul. Starytskoho, Lviv, Ukraine ("we", "us"). We are the data controller for the
-  account and usage information described below. Contact us about anything in this policy at
-  <a href="mailto:dev1@5hz.io">dev1@5hz.io</a>.</p>
+<p>CareAlong is provided by Volodymyr Huz, vul. Starytskoho, Lviv, Ukraine ("we", "us"). We don't receive the information
+  you enter in the app. We are the data controller only for the emails you send us and for this website, as described
+  below. Contact us about anything in this policy at <a href="mailto:dev1@5hz.io">dev1@5hz.io</a>.</p>
 
-<h2>The information we handle</h2>
+<h2>The information involved</h2>
 <table>
-  <tr><th scope="col">Information</th><th scope="col">Why</th><th scope="col">Legal basis (EU/UK)</th><th scope="col">Kept for</th></tr>
+  <tr><th scope="col">Information</th><th scope="col">Where it is and why</th><th scope="col">Legal basis (EU/UK)</th><th scope="col">Kept for</th></tr>
   <tr><td>Care information you enter (medicines, doses, schedules, logs, notes, check-ins, appointments, contacts,
-    allergies, documents, costs, rota, readings, photos)</td>
-    <td>To show it to you and the family you invite</td>
-    <td>Performing our agreement with you; for health information, your explicit consent, which you give by entering
-      and sharing it and can withdraw by deleting it</td>
-    <td>Until you or your family delete it</td></tr>
-  <tr><td>Account: name, email, password (hashed), mobile number if you add one (it's optional), account ID,
-    sign-in dates. With Sign in with
-    Apple: name and an email, which can be a private relay address</td>
-    <td>To sign you in, keep your account secure and contact you about it</td>
-    <td>Performing our agreement with you</td>
-    <td>Until you delete the account</td></tr>
-  <tr><td>Anonymous usage statistics (only if you turn them on)</td>
-    <td>To learn which features help and what to improve</td>
-    <td>Your consent</td>
-    <td>Until you turn them off; TelemetryDeck keeps them under its own retention rules</td></tr>
-  <tr><td>Security signals: an anonymous sign-in ID per device, and Apple's App Attest check that requests come
-    from the genuine app</td>
-    <td>To stop abuse of our services</td>
-    <td>Our legitimate interest in keeping the service safe</td>
-    <td>The device ID for as long as the app is installed; provider logs under Google's and Apple's retention rules</td></tr>
+    allergies, readings, photos, documents)</td>
+    <td>Only on your device, to show it to you, remind you and make the summaries you choose to send. We never receive
+      it</td>
+    <td>Not processed by us: it stays under your control on your device</td>
+    <td>Until you delete it or the app</td></tr>
+  <tr><td>The care circle (the cared-for person's name and time zone) and your display name</td>
+    <td>In your own private iCloud database (Apple CloudKit), so the app can keep your care circle set up. We can't
+      access your private iCloud database</td>
+    <td>Not processed by us: Apple stores it for you under its terms</td>
+    <td>Until you delete the care circle or remove CareAlong's data from iCloud</td></tr>
   <tr><td>Emails you send us</td>
     <td>To answer you</td>
     <td>Our legitimate interest in helping you</td>
@@ -63,53 +53,37 @@
     <td>The host's and our legitimate interest in a secure site</td>
     <td>Set by the host, typically under 30 days</td></tr>
 </table>
-<p>We don't collect anything else, and we don't ask for more than each feature needs.</p>
+<p>The app has no accounts or sign-in, sends no usage statistics to us, and contains no advertising or tracking. If
+  you allow it in iOS Settings › Privacy &amp; Security › Analytics &amp; Improvements, Apple may share anonymous crash
+  reports with app developers, including us; they contain no care information. We don't collect anything else.</p>
 
-<h2>Where your care information is kept, and why we can't read it</h2>
+<h2>Where your care information is kept</h2>
 <ul>
-  <li><strong>On your devices</strong>, in the app's private storage. The Home Screen widget reads a small summary of
-    today's schedule on the same device.</li>
-  <li><strong>In an end-to-end encrypted store</strong>, so it reaches the people you invite. Each item is encrypted
-    on your device, before it leaves, with a key that only your family's devices hold. The encrypted copies are kept
-    by Google Cloud Firestore as our processor. Neither we nor Google can decrypt them. Next to each encrypted item
-    the store keeps only an identifier, its type (for example "medicine"), when it last changed and whether it was
-    deleted.</li>
-  <li><strong>In your iCloud account</strong> (Apple CloudKit), which holds only how your family is set up: the care
-    circle, the cared-for person's name and time zone, who belongs to it, and the encryption key, in CloudKit's
-    end-to-end encrypted fields. No health information is stored in iCloud.</li>
+  <li><strong>On your device</strong>, in the app's private storage. The Home Screen and Lock Screen widgets read a
+    small summary of today's schedule on the same device, and your Apple Watch gets today's list directly from your
+    iPhone. Documents you add are also encrypted by the app on the device.</li>
+  <li><strong>In your device backups</strong>, if you use iCloud Backup or back up to a computer, like any app's data.
+    That's what lets you restore it on a new phone. Apple or your computer holds these backups, not us.</li>
+  <li><strong>In your own iCloud account</strong> (Apple CloudKit, private database): only the care circle, with the
+    cared-for person's name in an encrypted field and their time zone, and the name you go by in the app. No
+    medicines, notes, readings or other care information is stored in iCloud.</li>
+  <li><strong>Wherever you send it.</strong> When you share a weekly summary, visit summary or emergency card through
+    Messages, Mail, AirDrop or a printer, it goes to the people and apps you choose. We don't see it.</li>
 </ul>
 
 <h2>Who processes data for us</h2>
-<p>We share information only with these service providers, under contracts that limit them to providing their
-  service to us:</p>
 <ul>
-  <li><strong>Google (Firebase Authentication, Cloud Firestore, App Check)</strong>: accounts, the encrypted store and
-    abuse protection. Google may process data in the United States. Transfers are covered by the EU–US Data Privacy
-    Framework and the European Commission's Standard Contractual Clauses.
-    <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</li>
-  <li><strong>Apple (iCloud, Sign in with Apple, App Attest, the App Store)</strong>: family sharing, optional
-    sign-in, app integrity checks and app distribution.
-    <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
-  <li><strong>TelemetryDeck</strong> (Germany): anonymous usage statistics, only if you turn them on.
-    <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</li>
+  <li><strong>Apple (iCloud, the App Store)</strong>: the two records in your private iCloud database, and app
+    distribution. <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
   <li><strong>GitHub, Inc.</strong> (GitHub Pages, United States): hosting this website.</li>
 </ul>
-<p>The people you invite to a care circle can see that circle's information. That's the purpose of the app, and
-  you control who is in it. We don't sell or rent personal information, we don't "share" it for cross-context
-  behavioural advertising, and we don't use advertising, tracking or data-broker services.</p>
-
-<h2>Anonymous usage statistics</h2>
-<p>Off unless you turn them on, during setup or in the app under Family › Privacy. If you do, the app sends events
-  such as "a medicine was marked as taken", rough counts such as "3–4 people help", and technical details such as app
-  and iOS version, device model, language and text size. It never sends names, medicines, doses, notes, check-in
-  answers, appointments, contacts, phone numbers, photos or anything else you type. Statistics use a random ID made for
-  the installation, which TelemetryDeck receives only as a one-way hash, and a new one is made if you turn them off and
-  on. Turning them off stops sending immediately.</p>
+<p>We don't sell or rent personal information, we don't "share" it for cross-context behavioural advertising, and we
+  don't use advertising, analytics, tracking or data-broker services.</p>
 
 <h2>Permissions the app asks for</h2>
 <table>
   <tr><th scope="col">Permission</th><th scope="col">Why</th></tr>
-  <tr><td>Notifications</td><td>Reminders and updates from your family. Reminders are scheduled on your device.</td></tr>
+  <tr><td>Notifications</td><td>Reminders, scheduled on your device.</td></tr>
   <tr><td>Camera</td><td>Only when you take a photo or scan a label or document. Label text is read on the phone and
     is not stored or sent.</td></tr>
   <tr><td>Face ID / Touch ID</td><td>Only if you turn on the app lock. iOS checks it; we never receive biometric data.</td></tr>
@@ -122,38 +96,31 @@
 <p>Depending on where you live (including the EU, UK, Ukraine and US states such as California, Colorado,
   Connecticut, Virginia and Washington), you can ask to access, correct, delete or receive a copy of your information.
   You can also object to or restrict how we use it, and withdraw consent at any time. Withdrawing consent doesn't
-  affect what was done before. Most of this you can do yourself in the app (see below). For anything else, email
+  affect what was done before. For anything we hold, such as your emails, write to
   <a href="mailto:dev1@5hz.io">dev1@5hz.io</a>. We'll answer within 30 days, or tell you within that time why
   we need longer, as the law where you live allows. We won't treat you differently for using your
   rights. If you're unhappy with our answer, you can complain to your data protection authority, and in some US
   states you can appeal our decision by replying to it.</p>
-<p>Because care information is end-to-end encrypted, we can't read or export it for you. You and your family hold
-  it on your devices, and you can delete it there.</p>
+<p>Because your care information stays on your device, we don't hold it and can't read, export or delete it for you.
+  You can see, change, share and delete it yourself in the app.</p>
 
 <h2>Deleting your information</h2>
 <ul>
   <li><strong>Single items:</strong> delete them in the app.</li>
-  <li><strong>A care circle:</strong> leave it, remove members or stop sharing in the Family tab. When someone is
-    removed, the family key is replaced, so they can't read anything shared afterwards, and the encrypted copies made
-    with the old key are deleted from our store about a month later.</li>
-  <li><strong>A whole care circle, everywhere:</strong> the Primary Caregiver can use Family › Security › Delete
-    This Care Circle. It's removed from every family member's device and from iCloud, and its encrypted copies are
-    deleted from our store within two days.</li>
-  <li><strong>Your account:</strong> Family › Account › Delete Account. This deletes your account details from our
-    sign-in service and, for Sign in with Apple, revokes our access to your Apple ID.</li>
-  <li><strong>Everything on a device:</strong> delete the app.</li>
-  <li><strong>Encrypted copies in our store:</strong> deleting an item leaves a small encrypted marker so your
-    family's other devices delete it too; our store removes these markers automatically about 90 days later. If you can't
-    use the app, email us and we'll delete a circle's encrypted records within 30 days.</li>
-  <li><strong>Usage statistics:</strong> turn them off. They are anonymous, so we can't find one person's
-    statistics.</li>
+  <li><strong>A whole care circle:</strong> Family › Security › Delete This Care Circle. It removes the circle and
+    everything in it from this device and its record from your iCloud. This can't be undone.</li>
+  <li><strong>Everything on a device:</strong> delete the app. Your device backups keep a copy until they are replaced
+    or deleted.</li>
+  <li><strong>CareAlong's iCloud records:</strong> in Settings › [your name] › iCloud, under the storage used by apps,
+    choose CareAlong and delete its data.</li>
+  <li><strong>Emails you sent us:</strong> ask us and we'll delete them.</li>
 </ul>
 
 <h2>Security</h2>
-<p>End-to-end encryption (AES-256-GCM), records that can't be altered or deleted by our servers without the family
-  key, app integrity checks, access rules on our database, optional Face ID / passcode lock, and no care data in
-  device backups once the encrypted store is in use. No system is perfectly secure; if a breach affects you, we'll
-  tell you and the authorities as the law requires.</p>
+<p>Your care information stays in the app's storage on your device, protected by iOS. Documents are also encrypted
+  by the app, and you can turn on a Face ID or passcode lock. The cared-for person's name in iCloud is kept in a field
+  Apple encrypts. No system is perfectly secure; if a breach affects you, we'll tell you and the authorities as the law
+  requires.</p>
 
 <h2>Children</h2>
 <p>CareAlong is for adults coordinating care and is not directed at anyone under 16. If you believe a child has given
@@ -173,7 +140,7 @@
   you in the app before they take effect.</p>
 
 <h2>Medical disclaimer</h2>
-<p>CareAlong is a family coordination tool, not a medical device. It doesn't diagnose, treat or give medical advice.
+<p>CareAlong is a care organiser, not a medical device. It doesn't diagnose, treat or give medical advice.
   Always follow your doctor's and pharmacist's instructions, and call emergency services in an emergency.</p>
 </main>
 <footer>
